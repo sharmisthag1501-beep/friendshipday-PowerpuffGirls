@@ -1,29 +1,97 @@
+/* ===================================
+POWERPUFF GIRLS - FOREVER STORY
+=================================== */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
 
-background:linear-gradient(135deg,#ffd6e8,#ffeaf5,#dff9ff);
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(
+180deg,
+#ffd6eb,
+#ffeaf5,
+#fff7fb
+);
 
 overflow-x:hidden;
 
-color:#444;
+color:#5d3558;
 
-text-align:center;
+line-height:1.8;
 
 }
 
-header{
+/* ==============================
+Floating Hearts Background
+============================== */
+
+.hearts{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+z-index:-2;
+
+background-image:
+
+radial-gradient(#ff7eb6 2px,transparent 2px),
+radial-gradient(#ffc0dc 2px,transparent 2px),
+radial-gradient(#ffffff 2px,transparent 2px);
+
+background-size:
+
+150px 150px,
+250px 250px,
+350px 350px;
+
+animation:floatHearts 40s linear infinite;
+
+opacity:.35;
+
+}
+
+@keyframes floatHearts{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-600px);
+
+}
+
+}
+
+/* ==============================
+INTRO
+============================== */
+
+.intro{
 
 height:100vh;
 
 display:flex;
-
-flex-direction:column;
 
 justify-content:center;
 
@@ -33,163 +101,195 @@ padding:30px;
 
 }
 
-h1{
+.intro-card{
 
-font-size:60px;
+background:white;
 
-font-family:Pacifico,cursive;
-
-color:#ff4f9a;
-
-animation:float 2s infinite alternate;
-
-}
-
-h2{
-
-margin-top:20px;
-
-color:#ff4f9a;
-
-}
-
-.subtitle{
-
-font-size:22px;
-
-margin:30px;
-
-max-width:700px;
-
-}
-
-button{
-
-padding:16px 40px;
-
-border:none;
+padding:70px;
 
 border-radius:40px;
 
-background:#ff4f9a;
+max-width:850px;
+
+text-align:center;
+
+box-shadow:
+
+0 25px 60px rgba(255,105,180,.20);
+
+}
+
+.tiny{
+
+font-size:18px;
+
+color:#ff5ca8;
+
+letter-spacing:3px;
+
+margin-bottom:20px;
+
+}
+
+.intro h1{
+
+font-size:60px;
+
+font-family:'Pacifico',cursive;
+
+color:#ff4f9f;
+
+margin-bottom:30px;
+
+}
+
+.intro p{
+
+font-size:22px;
+
+margin-bottom:40px;
+
+}
+
+/* ==============================
+BUTTON
+============================== */
+
+button{
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(
+135deg,
+#ff5ca8,
+#ff99cc
+);
 
 color:white;
 
 font-size:18px;
 
+font-weight:600;
+
 cursor:pointer;
 
 transition:.3s;
+
+box-shadow:0 15px 30px rgba(255,105,180,.30);
 
 }
 
 button:hover{
 
-transform:scale(1.1);
+transform:translateY(-5px);
+
+box-shadow:0 20px 40px rgba(255,105,180,.35);
 
 }
 
-.message{
+/* ==============================
+HERO
+============================== */
 
-max-width:900px;
+.hero{
 
-margin:auto;
+display:flex;
 
-padding:80px 30px;
+align-items:center;
 
-line-height:2;
+justify-content:space-between;
 
-font-size:20px;
+padding:120px 8%;
 
-}
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
-
-padding:50px;
+gap:60px;
 
 }
 
-.gallery img{
+.hero-left{
 
-width:100%;
-
-height:350px;
-
-object-fit:cover;
-
-border-radius:25px;
-
-box-shadow:0 12px 30px rgba(0,0,0,.2);
-
-transition:.4s;
+flex:1;
 
 }
 
-.gallery img:hover{
+.hero-left h1{
 
-transform:scale(1.05);
+font-size:60px;
+
+font-family:'Pacifico',cursive;
+
+color:#ff4f9f;
+
+margin-bottom:30px;
 
 }
 
-.quote{
-
-padding:80px 30px;
+.hero-left p{
 
 font-size:22px;
 
 }
 
-footer{
+.hero-right{
 
-padding:40px;
+display:flex;
 
-background:white;
+justify-content:center;
 
-font-weight:bold;
+align-items:center;
 
-}
-
-.heart{
-
-position:fixed;
-
-top:-30px;
-
-font-size:25px;
-
-animation:fall linear forwards;
-
-pointer-events:none;
+flex:1;
 
 }
 
-@keyframes fall{
+.powerpuff-circle{
 
-to{
+width:320px;
 
-transform:translateY(110vh);
+height:320px;
+
+border-radius:50%;
+
+background:linear-gradient(
+
+135deg,
+
+#ffb6d9,
+
+#ffd9ec
+
+);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:90px;
+
+box-shadow:
+
+0 20px 50px rgba(255,105,180,.25);
+
+animation:bounce 4s infinite ease-in-out;
 
 }
 
-}
+@keyframes bounce{
 
-@keyframes float{
+0%,100%{
 
-from{
-
-transform:translateY(-5px);
+transform:translateY(0);
 
 }
 
-to{
+50%{
 
-transform:translateY(8px);
+transform:translateY(-20px);
 
 }
 
