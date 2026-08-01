@@ -294,3 +294,276 @@ transform:translateY(-20px);
 }
 
 }
+/* ==============================
+LETTER
+============================== */
+
+#letter{
+
+padding:100px 8%;
+
+}
+
+.letter{
+
+max-width:950px;
+
+margin:auto;
+
+background:rgba(255,255,255,.92);
+
+padding:70px;
+
+border-radius:35px;
+
+box-shadow:
+
+0 20px 60px rgba(255,105,180,.15);
+
+border:3px solid #ffd6ea;
+
+}
+
+.letter h2{
+
+font-family:'Pacifico',cursive;
+
+font-size:48px;
+
+text-align:center;
+
+color:#ff4f9f;
+
+margin-bottom:40px;
+
+}
+
+.letter h3{
+
+font-size:40px;
+
+font-family:'Pacifico',cursive;
+
+text-align:center;
+
+color:#ff70ad;
+
+margin:40px 0;
+
+}
+
+.letter p{
+
+font-size:20px;
+
+margin-bottom:22px;
+
+color:#6d4c67;
+
+text-align:center;
+
+line-height:2;
+
+}
+
+/* ==============================
+JOURNEY
+============================== */
+
+#journey{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+margin-bottom:80px;
+
+}
+
+.title h1{
+
+font-family:'Pacifico',cursive;
+
+font-size:58px;
+
+color:#ff4f9f;
+
+margin-bottom:20px;
+
+}
+
+.title p{
+
+font-size:22px;
+
+color:#7a5871;
+
+}
+
+/* ==============================
+TIMELINE
+============================== */
+
+.timeline{
+
+display:flex;
+
+flex-direction:column;
+
+gap:70px;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+/* ==============================
+MEMORY CARD
+============================== */
+
+.memory{
+
+display:flex;
+
+align-items:center;
+
+gap:40px;
+
+background:white;
+
+padding:25px;
+
+border-radius:30px;
+
+box-shadow:
+
+0 18px 45px rgba(255,105,180,.15);
+
+transition:.35s;
+
+}
+
+.memory:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 25px 60px rgba(255,105,180,.25);
+
+}
+
+.memory.left{
+
+flex-direction:row;
+
+}
+
+.memory.right{
+
+flex-direction:row-reverse;
+
+}
+
+.memory img{
+
+width:320px;
+
+height:320px;
+
+object-fit:contain;
+
+background:#fff5fa;
+
+border-radius:25px;
+
+padding:10px;
+
+border:4px solid #ffd6ea;
+
+}
+
+.text{
+
+flex:1;
+
+}
+
+.text h3{
+
+font-family:'Pacifico',cursive;
+
+font-size:34px;
+
+color:#ff4f9f;
+
+margin-bottom:20px;
+
+}
+
+.text p{
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#6d4c67;
+
+}
+
+/* ==============================
+QUOTE
+============================== */
+
+.quote{
+
+background:linear-gradient(
+
+135deg,
+
+#ff6fb3,
+
+#ffb3d7
+
+);
+
+color:white;
+
+padding:45px;
+
+border-radius:30px;
+
+font-size:30px;
+
+text-align:center;
+
+font-family:'Pacifico',cursive;
+
+line-height:1.8;
+
+box-shadow:
+
+0 18px 45px rgba(255,105,180,.25);
+
+}
+
+.quote.pink{
+
+background:linear-gradient(
+
+135deg,
+
+#ff9fc8,
+
+#ffd8ea
+
+);
+
+color:#8c3c66;
+
+}
